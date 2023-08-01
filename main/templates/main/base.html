@@ -1,0 +1,95 @@
+{% load static %}
+<html>
+<head>
+	<style type="text/css">
+
+		body{
+		 width: 700px;
+		position:static;
+		 margin-right: auto;
+		 margin-left: auto;
+	  	 padding-top: 200px;
+	  	 font-weight: 818181;
+	  	 font-weight: 500;
+	  	 font-size:15px;
+	  	 font-family: sans-serif;
+	  	 line-height: 22px;
+		}
+
+		.sidenav {
+
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 30%;
+			padding: 40px 850px;
+			background-color: #111;
+			display: flex;
+			justify-content: space-between;
+			align-tiems: center;
+			z-index 100;
+
+
+		}
+		.sidenav a
+		{
+			position: relative;
+			font-size: 18px;
+			font-weight: 500;
+			color: #818181;
+			font-weight: 818181;
+			text-decoration: none;
+			margin-left: 20px;
+
+		}
+		.sidenav a::before {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background: #fff;
+			transition: .3s;
+
+		}
+		.sidenav a:hover{
+			color:#f1f1f1;
+
+		}
+		.sidenav a:hover::before{
+			width: 100%
+		}
+
+	</style>
+
+	<title> {% block title %} About me {% endblock %} </title>
+	
+</head>
+<body>
+	<div class="sidenav">
+		<a href="/home"> Art </a>
+		<a href="/"> About me </a>
+		<a href="/program"> About me </a>
+		<a href=""> </a>
+		<a href=""> </a>
+		<a href=""> </a>
+		<a href=""> </a>
+		<a href=""> </a>
+		<a href=""> </a>
+	</div>
+
+	<div id="content", name="content", class = "main">
+	{% block content %}
+		
+		I am a first year student at the Univeristy of Waterloo in the computer science program. I love learning new things about code to make new 
+		projects. I always think about what I could make easier in my life with code or what service I can offer.  
+		
+
+	{% endblock %}
+	</div>
+
+
+</body>
+
+</html>

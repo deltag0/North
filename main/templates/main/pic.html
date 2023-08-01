@@ -1,0 +1,211 @@
+{% load static %}
+<html>
+<head>
+	<style type="text/css">
+		.sidenav {
+
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 30%;
+			padding: 40px 850px;
+			background-color: #111;
+			display: flex;
+			justify-content: space-between;
+			align-tiems: center;
+			z-index 100;
+
+
+		}
+		.sidenav a
+		{
+			position: relative;
+			font-size: 18px;
+			font-weight: 500;
+			color: #818181;
+			font-weight: 818181;
+			text-decoration: none;
+			margin-left: 20px;
+
+		}
+		.sidenav a::before {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background: #fff;
+			transition: .3s;
+
+		}
+		.sidenav a:hover{
+			color:#f1f1f1;
+
+		}
+		.sidenav a:hover::before{
+			width: 100%
+		}
+
+		.image1{
+			margin-left: auto;
+			margin-right: auto;	
+			display: block;
+			overflow: hidden;	
+			position: static;
+			margin-bottom: 50px;
+			margin-top: 150px;	
+			width: 400px;
+			height: 450px;
+			border: 5px solid #6495ED;
+
+		}
+
+		.image2{
+			margin-left: auto;
+			margin-right: auto;	
+			display: block;
+			flex-direction: column;
+			align-items: center	;
+			justify-content: center;
+			position: static;
+			padding-bottom: 50px;	
+			
+			width: 400px;
+			height: 450px;
+			border: 5px solid #6495ED;
+
+
+		}
+		.image3{
+			margin-left: auto;
+			margin-right: auto;	
+			display: block;
+			overflow: hidden;	
+			position: static;
+			margin-bottom: 50px;
+			margin-top: 150px;	
+			width: 400px;
+			height: 450px;
+			border: 5px solid #6495ED;
+			
+		}
+
+		.image4{
+			margin-left: auto;
+			margin-right: auto;	
+			display: block;
+			overflow: hidden;	
+			position: static;
+			margin-bottom: 50px;
+			margin-top: 150px;	
+			width: 400px;
+			height: 450px;
+			border: 5px solid #6495ED;
+			
+		}
+		.image5{
+			margin-left: auto;
+			margin-right: auto;	
+			display: block;
+			overflow: hidden;	
+			position: static;
+			margin-bottom: 50px;
+			margin-top: 150px;	
+			width: 400px;
+			height: 450px;
+			border: 5px solid #6495ED;
+			
+		}
+		.image6{
+			margin-left: auto;
+			margin-right: auto;	
+			display: block;
+			overflow: hidden;	
+			position: static;
+			margin-bottom: 50px;
+			margin-top: 150px;	
+			width: 400px;
+			height: 450px;
+			border: 5px solid #6495ED;
+			
+		}
+		.image7{
+			margin-left: auto;
+			margin-right: auto;	
+			display: block;
+			overflow: hidden;	
+			position: static;
+			margin-bottom: 50px;
+			margin-top: 150px;	
+			width: 400px;
+			height: 450px;
+			border: 5px solid #6495ED;
+			
+		}
+
+
+		
+	</style>
+
+	<title> {% block title %} About me {% endblock %} </title>
+	
+</head>
+<div class = scl>	
+	<body>
+		<div class="sidenav">
+			<a href="/home"> Art </a>
+			<a href="/"> About me </a>
+			<a href="/program"> About me </a>
+			<a href=""> </a>
+			<a href=""> </a>
+			<a href=""> </a>
+			<a href=""> </a>
+			<a href=""> </a>
+			<a href=""> </a>
+		</div>
+
+
+	{%block image%}
+	<div class = image1>	
+		<img src="{% static 'main/media/pic1.jpg' %}" alt = "home" width = "400" height="500" />
+	</div>
+	
+
+
+		<div class = image2>
+		<img src="{% static 'main/media/pic2.jpg' %}" alt = "home" width = "400" height="500" />
+		</div>
+	
+
+
+		<div class = image3>
+		<img src="{% static 'main/media/pic3.png' %}" alt = "home" width = "400" height="500" />
+		</div>
+	
+
+
+		<div class = image4>
+		<img src="{% static 'main/media/pic4.png' %}" alt = "home" width = "400" height="500" />
+		</div>
+	
+
+
+		<div class = image5>
+		<img src="{% static 'main/media/pic5.png' %}" alt = "home" width = "400" height="500" />
+		</div>
+	
+
+
+		<div class = image6>
+		<img src="{% static 'main/media/pic6.jpg' %}" alt = "home" width = "400" height="500" />
+		</div>
+	
+
+
+		<div class = image7>
+		<img src="{% static 'main/media/pic7.png' %}" alt = "home" width = "400" height="500" />
+		</div>
+	{% endblock %}
+	</body>	
+</div>
